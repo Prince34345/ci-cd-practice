@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: print hello world
-        run: echo 'hello world from github workflows'
+        run: echo "hello world from github workflows at ${{github.event.head_commit.timestamp}} on branch ${{github.ref}}"

@@ -24,4 +24,4 @@ jobs:
         run: echo "hello world from github workflows at ${{github.event.head_commit.timestamp}} on branch ${{github.ref}}"
       
       - name: print commit infos
-        run: echo "this is information= ${{github.head_commit.message}}"
+        run: echo "this is information= ${{github.event.head_commit.message}}"
